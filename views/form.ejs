@@ -4,14 +4,19 @@
         <link rel="stylesheet" href="./new.css">
     </head>
     <body>
-        <form method="POST" action="/new">
-            <h3>Add your Message and Name!</h3>
-            <label for="user">Name:</label>
-            <input type="text" name="user" required>
-            <label for="message">Message:</label>
-            <textarea name="message" id="message" rows="4" cols="50" required></textarea>
+        <form method="POST" action="/new" class="message-form">
 
-            <button type="submit">Send</button>
+            <h3 class="form-header">Add your Message and Name!</h3>
+            <div class="name-section">
+                <label for="user">Name:</label>
+                <input type="text" name="user" id="user" required>
+            </div>
+            <div class="message-section">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="5" cols="50" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-message-btn">Send</button>
         </form>
     </body>
 </html>
