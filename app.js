@@ -3,6 +3,7 @@ const path = require('path');
 
 const indexRouter = require('./routes/index.js');
 const newMessageRouter = require('./routes/new.js');
+const detailRouter = require('./routes/detail.js');
 
 const app = express()
 const assetsPath = path.join(__dirname, "styles")
@@ -15,6 +16,7 @@ app.use(express.urlencoded({ extended: true}));
 
 app.use("/", indexRouter)
 app.use("/new", newMessageRouter)
+app.use("/detail", detailRouter)
 
 
 const PORT = process.env.PORT || 3000;

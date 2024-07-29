@@ -1,3 +1,4 @@
+const { render } = require('ejs');
 const express = require('express');
 const router = express.Router()
 
@@ -26,6 +27,14 @@ router.get("/", (req, res) => {
 
 router.get('/new', (req, res) => {
     res.render('form')
+})
+
+router.get('/detail/:messageId', (req, res) => {
+    const messageId = req.params.messageId;
+    console.log(messageId)
+    const message = messages[messageId];
+    console.log(req.params)
+    res.render('message', {message: message})
 })
 
 router.post('/new', (req,res) => {

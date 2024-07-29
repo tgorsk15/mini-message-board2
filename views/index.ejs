@@ -5,6 +5,7 @@
     </head>
     <body>
         <% for (let i = 0; i < messages.length; i++) { %>
+            <% const messageIndex = [i] %>
             <h4 class="message-user">
                 <%= messages[i].user %>
             </h4>
@@ -16,6 +17,7 @@
                     on <%= messages[i].added %>
                 </p>
             </div>
+            <a href="/detail/<%= messageIndex %>" class="open-message-link">Open</a>
             
         <% } %>
         <a href="/new" class="new-message-link">Send a Message</a>

@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Message</title>
+    </head>
+    <body>
+        <h4 class="message-user">
+            <%= message.user %>
+        </h4>
+        <div class="content-container">
+            <p class="message-content">
+                <%= message.text %>
+            </p>
+            <p class="message-time">
+                on <%= message.added %>
+            </p>
+        </div>
+    </body>
+</html>
