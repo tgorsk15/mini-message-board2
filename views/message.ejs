@@ -4,19 +4,25 @@
         <link rel="stylesheet" href="/detail.css">
     </head>
     <body>
-        <% console.log('hi') %>
         <%- include('header') %>
-        <h4 class="message-user">
-            <%= message.user %>
-        </h4>
-        <div class="content-container">
-            <p class="message-content">
-                <%= message.text %>
-            </p>
-            <p class="message-time">
-                on <%= message.added %>
-            </p>
+        <div class="detail-outer-container">
+            <div class="detail-inner-container">
+                <h4 class="message-user">
+                    <%= message.user %>
+                </h4>
+                <div class="content-container">
+                    <p class="message-content">
+                        <%= message.text %>
+                    </p>
+                    <p class="message-time">
+                        on <%= message.added %>
+                    </p>
+                </div>
+                <a href="/" class="back-link">Go Back</a>  
+            </div>
+            
+            
         </div>
-        <a href="/" class="back-link">Go Back</a>
+        
     </body>
 </html>

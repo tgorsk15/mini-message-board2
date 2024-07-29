@@ -17,6 +17,28 @@ body {
 }
 
 
+
+.detail-outer-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 50%;
+    align-items: center;
+}
+
+.detail-inner-container {
+    /* min-height: 40vh; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.message-user {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+
 .back-link {
     text-decoration: none;
     color: white;
@@ -24,4 +46,6 @@ body {
     border-radius: 15px;
     padding: 10px;
     font-size: 25px;
+    margin-top: 25px;
+    width: 95px;
 }
