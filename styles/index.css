@@ -3,7 +3,23 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0px;
 }
+
+/* header template */
+.header-container {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    min-width: 100vw;
+    border-bottom: 2px solid black;
+}
+
+.header-title {
+    margin-left: 40px;
+}
+
+
 
 .content-container {
     position: relative;

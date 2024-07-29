@@ -1,6 +1,25 @@
 body {
+    margin: 0px;
+}
+
+/* header template */
+.header-container {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    height: 70px;
+    min-width: 100vw;
+    border-bottom: 2px solid black;
+}
+
+.header-title {
+    margin-left: 40px;
+}
+
+
+.form-container {
+    min-width: 100%;
+    display: flex;
+    justify-content: center; 
 }
 
 .message-form {

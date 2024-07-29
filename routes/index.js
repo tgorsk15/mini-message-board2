@@ -30,10 +30,12 @@ router.get('/new', (req, res) => {
 })
 
 router.get('/detail/:messageId', (req, res) => {
+    console.log(`Params: ${req.params.messageId}`)
     const messageId = req.params.messageId;
+    // const messageId = parseInt(req.params.messageId, 10);
     console.log(messageId)
     const message = messages[messageId];
-    console.log(req.params)
+    console.log(message)
     res.render('message', {message: message})
 })
 
