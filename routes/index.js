@@ -29,9 +29,10 @@ router.get('/new', (req, res) => {
 })
 
 router.post('/new', (req,res) => {
-    
-    console.log(req.body.name)
-    console.log(req.body.message)
+    const content = req.body
+    console.log(content)
+    messages.push({text: content.message, user: content.user, added: new Date()})
+    console.log(messages)
     res.send('message added')
 })
 
