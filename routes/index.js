@@ -39,7 +39,6 @@ router.get('/detail/:messageId', (req, res) => {
 
 router.post('/new', (req,res) => {
     const content = req.body
-    console.log(content)
     messages.push({text: content.message, user: content.user, added: new Date()})
     console.log(messages)
     res.redirect("/")
