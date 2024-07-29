@@ -33,7 +33,7 @@ router.post('/new', (req,res) => {
     console.log(content)
     messages.push({text: content.message, user: content.user, added: new Date()})
     console.log(messages)
-    res.send('message added')
+    res.redirect("/")
 })
 
 module.exports = router

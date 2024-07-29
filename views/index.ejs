@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>HomePage</title>
+        <link rel="stylesheet" href="./index.css">
     </head>
     <body>
         <% for (let i = 0; i < messages.length; i++) { %>
@@ -12,10 +13,11 @@
                     <%= messages[i].text %>
                 </p>
                 <p class="message-time">
-                    at <%= messages[i].added %>
+                    on <%= messages[i].added %>
                 </p>
             </div>
             
         <% } %>
+        <a href="/new" class="new-message-link">Send a Message</a>
     </body>
 </html>

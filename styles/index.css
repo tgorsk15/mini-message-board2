@@ -1,0 +1,12 @@
+.content-container {
+
+}
+
+.new-message-link {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(144, 111, 144);
+    font-size: 26px;
+    padding: 10px;
+    border-radius: 20px;
+}

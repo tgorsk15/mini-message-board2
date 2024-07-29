@@ -6,9 +6,9 @@
         <form method="POST" action="/new">
             <h3>Add your Message and Name!</h3>
             <label for="user">Name:</label>
-            <input type="text" name="user">
+            <input type="text" name="user" required>
             <label for="message">Message:</label>
-            <textarea name="message" id="message" rows="4"></textarea>
+            <textarea name="message" id="message" rows="4" cols="50" required></textarea>
 
             <button type="submit">Send</button>
         </form>

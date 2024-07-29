@@ -5,6 +5,8 @@ const indexRouter = require('./routes/index.js');
 const newMessageRouter = require('./routes/new.js');
 
 const app = express()
+const assetsPath = path.join(__dirname, "styles")
+app.use(express.static(assetsPath))
 
 app.set("views", path.join(__dirname, "views"))
 app.set("view engine", "ejs")
