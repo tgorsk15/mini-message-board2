@@ -24,4 +24,15 @@ router.get("/", (req, res) => {
     res.render('index', {messages: messages})
 })
 
+router.get('/new', (req, res) => {
+    res.render('form')
+})
+
+router.post('/new', (req,res) => {
+    
+    console.log(req.body.name)
+    console.log(req.body.message)
+    res.send('message added')
+})
+
 module.exports = router
