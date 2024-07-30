@@ -24,6 +24,7 @@ body {
 .content-container {
     position: relative;
     font-size: 21px;
+    line-height: 1.2;
     padding: 13px;
     padding-right: 10px;
     padding-left: 10px;

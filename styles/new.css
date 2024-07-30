@@ -23,6 +23,7 @@ body {
 }
 
 .message-form {
+    position: relative;
     margin-top: 100px;
     width: 40vw;
 }
@@ -41,17 +42,15 @@ body {
     margin-bottom: 25px;
 }
 
-.message-section {
-
-}
-
 #user {
     max-width: 40%;
     padding: 6px 8px;
+    font-size: 16px;
 }
 
 #message {
     padding: 8px;
+    font-size: 16px;
 }
 
 .submit-message-btn {
@@ -62,4 +61,16 @@ body {
     color: white;
     border-radius: 15px;
     border: none;
+}
+
+.cancel-message {
+    position: absolute;
+    top: 25px;
+    right: 5px;
+    text-decoration: none;
+    color: rgb(196, 74, 74);
+    font-weight: bold;
+    font-size: 26px;
+    /* border: 1px solid grey; */
+    padding: 3px;
 }
