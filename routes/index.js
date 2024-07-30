@@ -21,7 +21,6 @@ const messages = [
 ]
 
 router.get("/", (req, res) => {
-    console.log(messages)
     res.render('index', {messages: messages})
 })
 
@@ -39,7 +38,6 @@ router.get('/detail/:messageId', (req, res) => {
 router.post('/new', (req,res) => {
     const content = req.body
     messages.push({text: content.message, user: content.user, added: new Date()})
-    console.log(messages)
     res.redirect("/")
 })
 
