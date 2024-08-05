@@ -1,9 +1,11 @@
 const express = require('express');
 const path = require('path');
+// require('dotenv').config();
 
 const indexRouter = require('./routes/index.js');
 const newMessageRouter = require('./routes/new.js');
 const detailRouter = require('./routes/detail.js');
+
 
 const app = express()
 const assetsPath = path.join(__dirname, "styles")
