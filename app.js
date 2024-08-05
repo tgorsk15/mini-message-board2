@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-// require('dotenv').config();
 
 const indexRouter = require('./routes/index.js');
 const newMessageRouter = require('./routes/new.js');
