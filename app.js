@@ -21,4 +21,4 @@ app.use("/detail", detailRouter)
 
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log('Howdy partner, your server is up and running'))
+app.listen(PORT, () => console.log(`Howdy partner, your server is up and running on ${PORT}`))

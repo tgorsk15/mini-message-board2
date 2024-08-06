@@ -1,6 +1,7 @@
 const { render } = require('ejs');
 const express = require('express');
 const router = express.Router()
+const db = require("../db/queries");
 
 const messages = [
     {
@@ -20,7 +21,9 @@ const messages = [
     }
 ]
 
-router.get("/", (req, res) => {
+router.get("/", async (req, res) => {
+    const results = await db.getAllUsernames()
+    console.log(results);
     res.render('index', {messages: messages})
 })
 
