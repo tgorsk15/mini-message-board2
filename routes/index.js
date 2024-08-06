@@ -24,7 +24,7 @@ const messages = [
 router.get("/", async (req, res) => {
     const results = await db.getAllUsernames()
     console.log(results);
-    res.render('index', {messages: messages})
+    res.render('index', {messages: results})
 })
 
 router.get('/new', (req, res) => {
