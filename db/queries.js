@@ -13,8 +13,12 @@ async function addMessage(text, user) {
     `, [text, user])
 }
 
-async function getUserInfo(userId) {
-
+async function getUserInfo(messageId) {
+    const result =await pool.query(`
+       SELECT * FROM messages
+       WHERE id = $1 
+    `, [messageId]);
+    return result.rows[0]
 }
 
 module.exports = {

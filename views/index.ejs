@@ -9,7 +9,7 @@
             <a href="/new" class="new-message-link">Send a Message</a>  
         </div>
         <% for (let i = 0; i < messages.length; i++) { %>
-            <% const messageIndex = i %>
+            <% const messageIndex = i + 1 %>
             <div class="content-container">
                 <h4 class="message-user">
                     <%= messages[i].user %>
@@ -22,7 +22,7 @@
                         on <%= messages[i].added %>
                     </p>
                 </div>
-                <a href="/detail/<%= messageIndex %>" class="open-message-link">Open</a>
+                <a href="/detail/<%= messages[i].id %>" class="open-message-link">Open</a>
             </div>
             
         <% } %>
