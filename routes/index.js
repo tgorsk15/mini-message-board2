@@ -6,7 +6,7 @@ const db = require("../db/queries");
 
 router.get("/", async (req, res) => {
     const results = await db.getAllUsernames()
-    console.log(results);
+    // console.log(results);
     res.render('index', {messages: results})
 })
 
@@ -16,9 +16,7 @@ router.get('/new', (req, res) => {
 
 router.get('/detail/:messageId', async (req, res) => {
     const messageId = req.params.messageId;
-    console.log(messageId)
     const chosenMessage = await db.getUserInfo(messageId)
-    console.log(chosenMessage)
     res.render('message', {message: chosenMessage})
 })
 

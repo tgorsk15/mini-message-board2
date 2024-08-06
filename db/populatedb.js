@@ -29,9 +29,7 @@ async function main() {
 
         await client.connect();
         const result = await client.query(SQL);
-        console.log(result)
         await client.end();
-        console.log("done")
     } catch (error) {
         console.log(error)
     }
